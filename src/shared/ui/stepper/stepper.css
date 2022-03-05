@@ -1,0 +1,18 @@
+.step-enter {
+  opacity: 0;
+  transform: translateX(200%);
+}
+.step-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in, transform 250ms ease-in;
+  transform: translateX(0);
+}
+.step-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.step-exit-active {
+  opacity: 0;
+  transform: translateX(-200%);
+  transition: opacity 300ms ease-in, transform 250ms ease-in;
+}
