@@ -18,7 +18,6 @@ type StepperProps = {
 };
 export const Stepper: FC<StepperProps> = ({ children, onClose, onSubmit, startFrom = 0, stepsOnScreen = 1 }) => {
   const [index, setIndex] = useState(startFrom);
-  console.log("\x1b[45m[LOG]\x1b[49m ~ index", index)
 
   // @ts-expect-error
   const steps = useMemo(() => Children.toArray(children).filter((it) => it.type === Step), [children]);
