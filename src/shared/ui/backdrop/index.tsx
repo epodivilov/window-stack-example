@@ -1,11 +1,8 @@
+import clsx from "clsx";
 import { FC } from "react";
-import { CSSTransition } from "react-transition-group";
 import "./backdrop.css";
 
-export const Backdrop: FC = () => {
-  return (
-    <CSSTransition className="backdrop" timeout={500}>
-      <div className="backdrop" />
-    </CSSTransition>
-  );
+type BackdropProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+export const Backdrop: FC<BackdropProps> = ({ className, ...rest }) => {
+  return <div {...rest} className={clsx("backdrop", className)} />;
 };

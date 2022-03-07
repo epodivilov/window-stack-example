@@ -14,9 +14,9 @@
   z-index: 1;
   margin: auto;
   background-color: white;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 .popup-header {
@@ -57,7 +57,8 @@
 
 .popup-content {
   display: flex;
-  padding: 0 16px;
+  flex-direction: column;
+  padding: 8px 16px;
 }
 
 .popup-footer {

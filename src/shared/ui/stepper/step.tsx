@@ -6,7 +6,6 @@ type Props = {
   prev: (index?: number) => void;
 };
 type StepProps = {
-  id: number | string;
   children: ({ next, prev }: Props) => ReactElement;
 };
 export const Step = memo<StepProps>(({ children }) => {
